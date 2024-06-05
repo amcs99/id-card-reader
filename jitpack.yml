@@ -4,5 +4,5 @@ jdk:
 before_install:
   - ./scripts/prepareJitpackEnvironment.sh
 install:
-  - FILE="-Dfile=IdCardReader.aar"
-  - mvn install:install-file $FILE -DgroupId=com.github.amcs99 -DartifactId=id-card-reader -Dversion=1.0.7 -Dpackaging=aar -DgeneratePom=true
+  - FILE="-Dfile=CardReader-release.aar"
+  - mvn install:install-file $FILE -DgroupId=com.github.amcs99 -DartifactId=id-card-reader -Dversion=1.1.0 -Dpackaging=aar -DgeneratePom=true
